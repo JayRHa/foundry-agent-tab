@@ -1,0 +1,16 @@
+{
+  "name": "foundry-agent-tab-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Backend for the Foundry Agent Tab: keeps the credential off the client and streams the Responses API to the browser.",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --env-file=.env --watch server.js"
+  },
+  "engines": { "node": ">=20.6" },
+  "dependencies": {
+    "@azure/identity": "^4.5.0",
+    "express": "^4.21.2"
+  }
+}

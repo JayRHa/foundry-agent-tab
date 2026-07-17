@@ -1,0 +1,37 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "5e52b671-2bd2-4e79-bb62-6c739585047a",
+  "packageName": "com.jannikreinhard.foundryagenttab",
+  "developer": {
+    "name": "Jannik Reinhard",
+    "websiteUrl": "https://jannikreinhard.com",
+    "privacyUrl": "https://jannikreinhard.com/privacy",
+    "termsOfUseUrl": "https://jannikreinhard.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Foundry Agents",
+    "full": "Foundry Agents — chat with your Microsoft Foundry agents"
+  },
+  "description": {
+    "short": "Chat with the agents in your Microsoft Foundry project.",
+    "full": "A personal tab that lists the agents in a Microsoft Foundry project and lets you chat with them without leaving Teams. Answers stream token by token, the tools the agent ran are shown as chips, and every grounded claim carries its source. Sample code for the book 'Microsoft Foundry' by Jannik Reinhard."
+  },
+  "accentColor": "#0A5FC0",
+  "staticTabs": [
+    {
+      "entityId": "foundry-agents",
+      "name": "Agents",
+      "contentUrl": "https://__TAB_DOMAIN__/",
+      "websiteUrl": "https://__TAB_DOMAIN__/",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity"],
+  "validDomains": ["__TAB_DOMAIN__"]
+}
