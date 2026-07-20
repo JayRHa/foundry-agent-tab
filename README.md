@@ -1,4 +1,22 @@
-# Foundry Agent Tab
+<!-- jr-brand:start -->
+<div align="center">
+  <a href="https://jannikreinhard.com/">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/learning.svg" alt="Jannik Reinhard — AI, Cloud and Endpoint Management" width="100%">
+  </a>
+  <h1>Microsoft Foundry Agent Tab</h1>
+  <p><strong>Chat with your Microsoft Foundry agents from a Microsoft Teams tab. Streaming answers, tool chips, citations, real errors. Sample code for the book 'Microsoft Foundry'.</strong></p>
+  <p>
+  <a href="https://jannikreinhard.com/"><img src="https://img.shields.io/badge/Website-0A5FC0?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="Website"></a>
+  <a href="https://github.com/JayRHa"><img src="https://img.shields.io/badge/GitHub-081427?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
+  <a href="https://www.linkedin.com/in/jannik-r/"><img src="https://img.shields.io/badge/LinkedIn-0795FF?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
+  <a href="https://x.com/jannik_reinhard"><img src="https://img.shields.io/badge/X-081427?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X"></a>
+  <a href="https://www.youtube.com/@ModernDevMgmt/featured"><img src="https://img.shields.io/badge/YouTube-0A5FC0?style=flat-square&amp;logo=youtube&amp;logoColor=white" alt="YouTube"></a>
+</p>
+  <p><sub>Book · Sample · Pattern · JavaScript · Practical by design</sub></p>
+</div>
+<!-- jr-brand:end -->
+
+## Overview
 
 A Microsoft Teams personal tab for chatting with the agents in a **Microsoft Foundry**
 project. It lists the agents the project actually exposes, streams answers token by
@@ -10,7 +28,7 @@ canned data.
 
 ![The tab answering a question, with the web search chip and its sources](docs/screenshots/answer-light.png)
 
-## Why this exists
+## Why This Exists
 
 Publishing an agent to Teams through the Foundry portal gives you a bot. That is the
 right answer for most people. This is the other answer: a tab you own, where you decide
@@ -19,7 +37,7 @@ the sources behind the sentence, the token cost of the turn, and the real reason
 failed are all first-class here, because those are the things you need when an agent
 misbehaves in front of a user.
 
-## What it does
+## What It Does
 
 - **Agent picker** built from `GET /agents` on the project. No hardcoded agent list —
   what you see is what the project has, including model and tools per agent.
@@ -168,3 +186,15 @@ open and understand in one sitting, which is the whole point.
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+<!-- jr-brand-footer:start -->
+
+---
+
+<div align="center">
+  <p><sub>Built and maintained by <a href="https://jannikreinhard.com/">Jannik Reinhard</a> · Microsoft MVP for Security and AI Platform.</sub></p>
+  <p><a href="https://www.buymeacoffee.com/jannikreinf">Support the open-source work</a></p>
+  <p><strong>Stay healthy, Cheers Jannik</strong></p>
+</div>
+
+<!-- jr-brand-footer:end -->
