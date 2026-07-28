@@ -1,7 +1,7 @@
 <!-- jr-brand:start -->
 <div align="center">
   <a href="https://jannikreinhard.com/">
-    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/tool.svg" alt="Jannik Reinhard — Driving AI with passion" width="100%">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — Driving AI with passion" width="100%">
   </a>
   <h1>Microsoft Foundry Agent Tab</h1>
   <p><strong>Chat with your Microsoft Foundry agents from a Microsoft Teams tab. Streaming answers, tool chips, citations, real errors. Sample code for the book &#x27;Microsoft Foundry&#x27;.</strong></p>
