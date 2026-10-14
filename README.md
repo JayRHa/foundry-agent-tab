@@ -1,22 +1,24 @@
 <!-- jr-brand:start -->
-<div align="center">
+<p align="center">
   <a href="https://jannikreinhard.com/">
-    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — Driving AI with passion" width="100%">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — I help enterprises ship secure AI agents" width="100%">
   </a>
-  <h1>Microsoft Foundry Agent Tab</h1>
-  <p><strong>Chat with your Microsoft Foundry agents from a Microsoft Teams tab. Streaming answers, tool chips, citations, real errors. Sample code for the book &#x27;Microsoft Foundry&#x27;.</strong></p>
-  <p>
-  <a href="https://jannikreinhard.com/"><img src="https://img.shields.io/badge/Website-146CDD?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="Website"></a>
-  <a href="https://github.com/JayRHa"><img src="https://img.shields.io/badge/GitHub-081427?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
-  <a href="https://www.linkedin.com/in/jannik-r/"><img src="https://img.shields.io/badge/LinkedIn-0795FF?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/jannik_reinhard"><img src="https://img.shields.io/badge/X-081427?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X"></a>
-  <a href="https://www.youtube.com/@jannikreinhard"><img src="https://img.shields.io/badge/YouTube-146CDD?style=flat-square&amp;logo=youtube&amp;logoColor=white" alt="YouTube"></a>
-  </p>
-  <p><sub>Driving AI with passion · Microsoft Foundry · Intune · Azure</sub></p>
-</div>
+</p>
+<p align="center">
+  <a href="https://jannikreinhard.com/">Website</a> ·
+  <a href="https://www.linkedin.com/in/jannik-r/">LinkedIn</a> ·
+  <a href="https://x.com/jannik_reinhard">X</a> ·
+  <a href="https://www.youtube.com/@jannikreinhard">YouTube</a>
+</p>
 <!-- jr-brand:end -->
 
+# Microsoft Foundry Teams tab
+
+**Type:** Examples and labs · **Status:** Community project
+
 ## Overview
+
+Chat with your Microsoft Foundry agents from a Microsoft Teams tab. Streaming answers, tool chips, citations, real errors. Sample code for the book 'Microsoft Foundry'.
 
 A Microsoft Teams personal tab for chatting with the agents in a **Microsoft Foundry**
 project. It lists the agents the project actually exposes, streams answers token by
@@ -27,6 +29,37 @@ Everything here runs against a real Foundry project — there is no mock mode an
 canned data.
 
 ![The tab answering a question, with the web search chip and its sources](docs/screenshots/answer-light.png)
+
+<a id="run-it-locally"></a>
+
+## Quickstart
+
+Requires Node 20+, the Azure CLI, and a Foundry project with at least one agent.
+
+```bash
+az login                       # the identity needs a Foundry role on the project
+cd server
+npm install
+cp .env.example .env           # then set FOUNDRY_PROJECT_ENDPOINT
+npm start
+```
+
+Open <http://localhost:3978>. Outside Teams the tab falls back to your OS colour
+scheme; append `?theme=dark` or `?theme=contrast` to force one.
+
+`FOUNDRY_PROJECT_ENDPOINT` is the project endpoint from the Foundry portal overview:
+
+```
+https://<resource>.services.ai.azure.com/api/projects/<project>
+```
+
+### Roles you need
+
+| Role | Why |
+|---|---|
+| `Azure AI Foundry User` | read the project |
+| `Azure AI Agent Consumer` | list agents |
+| `Azure AI Project Runtime User` | create conversations and responses |
 
 ## Why This Exists
 
@@ -117,35 +150,6 @@ These cost real time to find. They are documented here so they cost you none.
 `.../responses/*`. Reading the agent list and calling the agent are separate
 permissions — a tab that lists agents but 403s on send is almost always this.
 
-## Run it locally
-
-Requires Node 20+, the Azure CLI, and a Foundry project with at least one agent.
-
-```bash
-az login                       # the identity needs a Foundry role on the project
-cd server
-npm install
-cp .env.example .env           # then set FOUNDRY_PROJECT_ENDPOINT
-npm start
-```
-
-Open <http://localhost:3978>. Outside Teams the tab falls back to your OS colour
-scheme; append `?theme=dark` or `?theme=contrast` to force one.
-
-`FOUNDRY_PROJECT_ENDPOINT` is the project endpoint from the Foundry portal overview:
-
-```
-https://<resource>.services.ai.azure.com/api/projects/<project>
-```
-
-### Roles you need
-
-| Role | Why |
-|---|---|
-| `Azure AI Foundry User` | read the project |
-| `Azure AI Agent Consumer` | list agents |
-| `Azure AI Project Runtime User` | create conversations and responses |
-
 ## Run it in Teams
 
 Teams only loads a tab over HTTPS, so during development point a tunnel at port 3978:
@@ -188,13 +192,7 @@ open and understand in one sitting, which is the whole point.
 MIT — see [LICENSE](LICENSE).
 
 <!-- jr-brand-footer:start -->
-
 ---
 
-<div align="center">
-  <p><sub>Built and maintained by <a href="https://jannikreinhard.com/">Jannik Reinhard</a> · Microsoft MVP for Security and AI Platform.</sub></p>
-  <p><a href="https://www.buymeacoffee.com/jannikreinf">Support the open-source work</a></p>
-  <p><strong>Stay healthy, Cheers Jannik</strong></p>
-</div>
-
+[Articles and guides](https://jannikreinhard.com/) · [Repository index](https://github.com/JayRHa/.github/blob/main/REPOSITORIES.md)
 <!-- jr-brand-footer:end -->
